@@ -134,6 +134,7 @@
                                     <ItemTemplate>
                                         <asp:LinkButton runat="server" ID="lnkedit" Text="Edit" CommandName="Cmdedit" CommandArgument='<%#Eval("eid") %>'></asp:LinkButton>
                                         <asp:LinkButton runat="server" ID="lnkdelete" Text="Delete" CommandName="CmdDelet" CommandArgument='<%#Eval("eid")%>'></asp:LinkButton>
+<asp:LinkButton runat="server" ID="lnkdelete" Text="Delete" CommandName="CmdDelet" OnClientClick="return confirm('Are you sure want delete data?');" CommandArgument='<%#Eval("eid")%>'></asp:LinkButton>
                                     </ItemTemplate>
                                 </asp:TemplateField>
 
